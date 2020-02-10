@@ -1,17 +1,43 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+section{
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  width: 50%;
+  height: 50%;
+}
+
+.digits{
+  padding: 20px;
 }
 
 .digit {
   display: inline-block;
+  /* font-family: 'Orbitron', sans-serif; */
   font-size: 80px;
+  color: white;
+  margin: 0 10px;
 }
 
 .redDigit {
   color: red;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
 }
 
 button{

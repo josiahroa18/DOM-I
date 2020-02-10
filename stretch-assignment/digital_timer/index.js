@@ -5,17 +5,13 @@ const ms = document.querySelector('#msTens');
 
 let intervalId;
 
-function hello(){
-    console.log("hello");
-}
-
 btnStart = document.getElementById('start');
 btnStart.addEventListener('click', function(){
     let currTens = 0;
     let currOnes = 0;
     let currHundreds = 0;
     let currMs = 0;
-    intervalId = setInterval(function(){
+    setInterval(function(){
         tens.textContent = currTens;
         ones.textContent = currOnes;
         hundreds.textContent = currHundreds;
@@ -36,7 +32,7 @@ btnStart.addEventListener('click', function(){
         }
 
     }, 10);
-    intervalId = setInterval(hello, 1000);
+    // console.log(intervalId);
 });
 
 btnReset = document.getElementById('reset');
