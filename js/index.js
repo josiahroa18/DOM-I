@@ -44,7 +44,21 @@ const siteContent = {
 // Nav Items
 const navItems = document.querySelectorAll('.container header nav a');
 for(let i=0; i<navItems.length; i++){
-  navItems[i].textContent = siteContent.nav[`nav-item-${i}`];
+  navItems[i].textContent = siteContent.nav[`nav-item-${i+1}`];
+}
+
+// Change colors of nav links
+for(let i=0; i<navItems.length; i++){
+  navItems[i].style.color = "green";
+}
+
+// Add two new items to nav
+const nav = document.querySelector('.container header nav');
+const newItems = ['Reviews', 'Share'];
+for(let i=0; i<newItems.length; i++){
+  const aTag = document.createElement('a');
+  aTag.textContent = newItems[i];
+  nav.appendChild(aTag);
 }
 
 // Header Logo
